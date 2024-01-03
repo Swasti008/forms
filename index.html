@@ -10,13 +10,48 @@ Challenge 4: When the form is submitted, get the user's response and add the sam
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My First Form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>"Unwrap a world of joy, tailored just for you!"</h1>
+  <h1>"Unwrap a world of joy, tailored just for you!" <img src="./asserts/gifts.png"></h1>
+  <div id="back">
+    <form action="mailto:swastimohanty452@gmail.com" method="post" enctype="text/plain">
+      <label for="gift">Gifting to:</label>
+      <input type="text" placeholder="gift for" name="gift to" required>
+      <br>
+      <label>Email:</label>
+      <input type="email" placeholder="email" name="email" required>
+      <br>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select><br>
+      <label>Colors Prefered for the wrap:</label>
+      <input type="color" value="color" name="color1" required>
+      <input type="color" value="color" name="color2" required>
+      <input type="color" value="color" name="color3" required>
+      <br>
+      <label>reference for the wrapping:</label>
+      <input type="file" value="file" name="file">
+      <br>
+      <label>Phone No.:</label>
+      <input type="number" maxlength="10" placeholder="Enter 10-digit phone number" name="phoneNumber">
+      <br>
+      <label>Address:</label>
+      <textarea name="address"required>where to deliver:</textarea>
+      <br>
+      <button type="submit" id="summit">GET YOUR PERSONLISED GIFT</button>
+    </form>
+  </div>
 
 </body>
+
 </html>
